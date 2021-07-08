@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/css/style.css" />
+
+    <title>Villanueva Calefacción</title>
+  </head>
+
+  <body>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 HEADER                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <header class="header">
+      <nav class="flex flex-jcsb flex-ai-c">
+        <a class="header__logo" href="index.html">
+          <img
+            src="img/logoVillanuevaCalefaccion.svg"
+            alt="Villanueva Calefaccion"
+          />
+        </a>
+
+        <a class="header__hamburger" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div class="nav">
+            <ul class="nav__menu">
+                <li><a class="header__links" href="index.html"></i>Inicio</a></li>
+                <li><a class="header__links" href="#"></i>Testimonios</a></li>
+                <li><a class="header__links" href="pages/servicios.html">Servicios<i class="fas fa-caret-down"></i></a>
+                    <ul class="nav__dropdownMenu">
+                        <li><a class="header__links" href="pages/radiadores.html">Radiadores</a></li>
+                        <li><a class="header__links" href="pages/pisoRadiante.html">Pisos Radiantes</a></li>
+                        <li><a class="header__links" href="pages/servicioTecnico.html">Servicio Tecnico</a></li>
+                        <li><a class="header__links" href="pages/instalacionCalderas.html">Instalacion de Calderas</a>
+                            <ul class="nav__dropdownSubMenu">
+                                <li><a class="header__links" href="pages/calderaMural.html">Calderas Murales</a></li>
+                                <li><a class="header__links" href="pages/calderaMuralCondensacion.html">Calderas Murales de Condensacion</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="header__links" href="pages/nosotros.html">Nosotros</a></li>
+                <li><a class="header__links" href="pages/contacto.html">Contacto</a></li>
+            </ul> 
+          </div>
+
+          <button type="button">Solicitar Presupuesto</button>
+      </nav>
+    </header>
+<!-- 
+    <main>
+      <section>
+        <h2>Nuestros Servicios</h2>
+        <div>
+          <div>
+            <img src="img/imagen1.jpg" alt="Imagen Radiador" />
+            <p><a href="pages/radiadores.html">Radiadores</a></p>
+          </div>
+          <div>
+            <img src="img/imagen2.jpg" alt="Imagen Piso Radiante" />
+            <p><a href="pages/pisoRadiante.html">Pisos Radiantes</a></p>
+          </div>
+          <div>
+            <img src="img/imagen4.jpg" alt="Servicio Calificado" />
+            <p><a href="pages/servicioTecnico.html">Servicio Tecnico</a></p>
+          </div>
+          <div>
+            <img src="img/imagen3.jpg" alt="Imagen Calderas Murales" />
+            <p>
+              <a href="pages/instalacionCalderas.html"
+                >Instalacion de Calderas</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <img src="img/imagenSobreNosotros.jpg" alt="Imagen Planos" />
+
+          <div>
+            <h2>Sobre <span>Nosotros</span></h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
+              mollitia, officiis quod dicta totam consequatur magni eos aperiam
+              maiores similique voluptatibus, corporis, nesciunt id in amet nam
+              at cum laboriosam. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Explicabo velit ut, magnam porro facere aut
+              saepe vero. Sint quo voluptatem velit consequatur maxime
+              temporibus officia optio, est non impedit voluptas.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cum,
+              perferendis veritatis soluta incidunt architecto. Voluptatibus
+              doloremque ducimus, neque laudantium dolorem optio in hic eos
+              aliquid exercitationem magnam rerum natus.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Marcas en las que <span>Confiamos</span></h2>
+        <div>
+          <img src="img/ariston.png" alt="Ariston" />
+          <img src="img/baxi.png" alt="Baxi" />
+          <img src="img/caldaia.png" alt="Caldaia" />
+          <img src="img/euterma.png" alt="Euterma" />
+          <img src="img/ferroli.png" alt="Ferroli" />
+          <img src="img/giacomini.png" alt="Giacomini" />
+          <img src="img/immergas.png" alt="Immergas" />
+          <img src="img/latynclima.png" alt="Latyn Clima" />
+          <img src="img/offit.png" alt="OfittFV" />
+          <img src="img/peisa.png" alt="Peisa" />
+          <img src="img/santilli.png" alt="Santilli" />
+          <img src="img/rehau.png" alt="Rehau" />
+        </div>
+      </section>
+
+      <section>
+        <form>
+          <fieldset>
+            <legend>Contactanos</legend>
+
+            <div>
+              <div>
+                <label for="radio">Sr.</label>
+                <input name="radio" type="radio" />
+                <label for="radio">Sra.</label>
+                <input name="radio" type="radio" />
+              </div>
+              <div>
+                <label for="name">Nombre y Apellido</label>
+                <input
+                  class="campoInput"
+                  type="text"
+                  placeholder="Ingrese su nombre"
+                  name=""
+                  id="name"
+                  required
+                  autofocus
+                />
+              </div>
+              <div>
+                <label for="country">País</label>
+                <select placeholder="" name="" id="country">
+                  <option value="argentina">Argentina</option>
+                  <option value="brasil">Brasil</option>
+                  <option value="paraguay">Paraguay</option>
+                  <option value="uruguay">Uruguay</option>
+                  <option value="bolivia">Bolivia</option>
+                  <option value="chile">Chile</option>
+                </select>
+              </div>
+              <div>
+                <label for="telefono">Teléfono</label>
+                <input
+                  class="campoInput"
+                  type="text"
+                  placeholder="Ingrese su teléfono"
+                  id="telefono"
+                />
+              </div>
+
+              <div>
+                <label for="email">Correo Electrónico</label>
+                <input
+                  class="campoInput"
+                  type="email"
+                  placeholder="Ingrese su correo electrónico"
+                  id="email"
+                />
+              </div>
+              <div>
+                <label for="check">Suscribite a nuestro Newsletter</label>
+                <input name="check" id="check" type="checkbox" />
+              </div>
+              <div>
+                <label for="textarea">Mensaje</label>
+                <textarea
+                  class="campoInput"
+                  placeholder="Dejenos un mensaje"
+                  name=""
+                  id="textarea"
+                  cols="20"
+                  rows="2"
+                ></textarea>
+              </div>
+
+              <div>
+                <div>
+                  <input
+                    name="Limpiar Formulario"
+                    type="submit"
+                    value="Limpiar Formulario"
+                  />
+                </div>
+                <div>
+                  <input name="enviar" type="submit" value="Enviar" />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <div>
+          <p>
+            Todos los derechos reservados<i class="far fa-copyright"></i> -
+            Villanueva Calefaccion
+          </p>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    -->
+    <script src="/app/js/scripts.js"></script>
+  </body>
+</html>

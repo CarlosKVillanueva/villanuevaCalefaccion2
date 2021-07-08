@@ -1,0 +1,12 @@
+/* -------------------------------------------------------------------------- */
+/*                               MIXIN GRADIENTS                              */
+/* -------------------------------------------------------------------------- */
+@mixin gradientBlack($direction) {
+  background-image: linear-gradient($direction, $darkBlack, $lightBlack);
+}
+@mixin gradientOrange($direction) {
+  background-image: linear-gradient($direction, $darkOrange, $lightOrange);
+}
+@mixin gradientGray($direction) {
+  background-image: linear-gradient($direction, $darkGray, $lightGray);
+}
