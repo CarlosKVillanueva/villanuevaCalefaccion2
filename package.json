@@ -1,0 +1,29 @@
+{
+  "name": "villanueva_calefaccion_2.0",
+  "version": "1.0.0",
+  "description": "Pagina Web Emprendimiento Familiar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosKVillanueva/villanueva_Calefaccion_2.0.git"
+  },
+  "keywords": [
+    "SASS",
+    "HTML"
+  ],
+  "author": "Carlos K Villanueva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlosKVillanueva/villanueva_Calefaccion_2.0/issues"
+  },
+  "homepage": "https://github.com/CarlosKVillanueva/villanueva_Calefaccion_2.0#readme",
+  "devDependencies": {
+    "sass": "^1.35.2"
+  },
+  "dependencies": {
+    "hover.css": "^2.3.2"
+  }
+}

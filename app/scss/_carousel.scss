@@ -1,0 +1,35 @@
+.carousel {
+  &-item {
+    max-height: 60rem;
+    overflow: hidden;
+  }
+  &-caption {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 5%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 0) 95%
+    );
+    padding: 1rem;
+    & h4 {
+      font-size: $font-M;
+      color: $darkBlack;
+    }
+
+    & p {
+      font-size: $font-S;
+      color: $darkBlack;
+    }
+  }
+  &-indicators {
+    > button {
+      border-radius: 0;
+      @include gradientOrange(to bottom);
+    }
+  }
+  &-control-next-icon,
+  &-control-prev-icon {
+    filter: invert(1);
+  }
+}

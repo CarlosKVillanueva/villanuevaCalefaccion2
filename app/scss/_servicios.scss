@@ -1,0 +1,38 @@
+.servicios {
+  width: 90%;
+  margin: 0 auto;
+
+  &__title {
+    color: $lightGray;
+    font-size: 3rem;
+    font-weight: $bold;
+    margin: 2rem auto;
+    text-align: center;
+  }
+  &__imagen {
+    max-width: 40rem;
+    @include breakpointUp(large) {
+      width: 40rem;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+
+    @include breakpointUp(medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpointUp(large) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  &__text {
+    text-align: center;
+    color: $lightGray;
+    padding-top: 1rem;
+  }
+}
