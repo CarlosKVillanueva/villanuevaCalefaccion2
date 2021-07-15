@@ -1,0 +1,38 @@
+.marcas {
+    @include gradientBlack(to right);
+    width: 100%;
+    &__title {
+        color: $lightGray;
+        font-size: 3rem;
+        text-align: center;
+        padding: 1.5rem 2rem 0.5rem 2rem;
+        font-weight: $regular;
+        >span {
+            font-weight: $bold;
+        }
+    }
+    &__images {
+        padding: 1rem 0;
+        background-color: $white;
+        >img {
+            padding: 1rem;
+            width: 18rem;
+            @include breakpointUp(large) {
+                width: 12rem;
+            }
+            @include breakpointUp(xlarge) {
+                width: 18rem;
+            }
+        }
+        display: grid;
+        gap: 1rem;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        @include breakpointUp(medium) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include breakpointUp(large) {
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
+}

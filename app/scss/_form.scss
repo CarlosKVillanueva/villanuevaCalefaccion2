@@ -1,0 +1,78 @@
+.formularioWrapper {
+    background-color: $darkBlack;
+    width: 100%;
+}
+
+.containerGrid {
+    width: 90vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    @include breakpointUp(medium) {
+        max-width: 50rem;
+    }
+    @include breakpointUp(large) {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 120rem;
+    }
+}
+
+.contacto {
+    padding: 1rem 2rem;
+    padding-bottom: 0;
+    a {
+        display: block;
+        padding: 1rem 0;
+        color: $lightGray;
+    }
+    h2 {
+        color: $lightGray;
+        font-size: 3rem;
+    }
+    >p {
+        color: $darkGray;
+    }
+}
+
+.far,
+.fab {
+    padding: .5rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    height: 40rem;
+    padding: 2rem;
+    padding-top: 0;
+    &__input {
+        height: 5rem;
+        border: 1px solid $darkGray;
+        background-color: $darkBlack;
+        color: $darkGray;
+        padding-left: 1rem;
+        border-radius: 1rem;
+    }
+    &__textarea {
+        height: 8rem;
+        border: 1px solid $darkGray;
+        background-color: $darkBlack;
+        color: $darkGray;
+        padding-left: 1rem;
+        border-radius: 1rem;
+    }
+    &__button {
+        height: 5rem;
+        border: 1px solid $darkGray;
+        background-color: $darkBlack;
+        color: $darkGray;
+        padding-left: 1rem;
+        border-radius: 1rem;
+        &:hover {
+            background-color: $lightBlack;
+            color: $lightGray;
+        }
+    }
+}

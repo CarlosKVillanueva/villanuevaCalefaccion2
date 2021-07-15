@@ -1,45 +1,49 @@
 /* -------------------------------------------------------------------------- */
+
+
 /*                               MIXIN GRADIENTS                              */
+
+
 /* -------------------------------------------------------------------------- */
+
 @mixin gradientBlack($direction) {
-  background: linear-gradient($direction, $darkBlack, $lightBlack);
+    background: linear-gradient($direction, $darkBlack, $lightBlack);
 }
+
 @mixin gradientOrange($direction) {
-  background: linear-gradient($direction, $darkOrange, $lightOrange);
+    background: linear-gradient($direction, $darkOrange, $lightOrange);
 }
+
 @mixin gradientGray($direction) {
-  background: linear-gradient($direction, $darkGray, $lightGray);
+    background: linear-gradient($direction, $darkGray, $lightGray);
 }
 
+
 /* -------------------------------------------------------------------------- */
+
+
 /*                                 BREAKPOINTS                                */
+
+
 /* -------------------------------------------------------------------------- */
 
-$breakpointsUp: (
-  "medium": "40em",
-  //640px&UP
-  "large": "64em",
-  //1024px&UP
-  "xlarge": "87.5em",
-  //1400x&UP
+$breakpointsUp: ( "medium": "40em", //640px&UP
+"large": "64em", //1024px&UP
+"xlarge": "87.5em", //1400x&UP
+"xxlarge": "100em", //1600px&UP
 );
-
-$breakpointsDown: (
-  "small": "39.9375em",
-  //639px&DOWN
-  "medium": "63.9375em",
-  //1023px&DOWN
-  "large": "87.4375em",
-  //1399px&DOWN
+$breakpointsDown: ( "small": "39.9375em", //639px&DOWN
+"medium": "63.9375em", //1023px&DOWN
+"large": "87.4375em", //1399px&DOWN
 );
-
 @mixin breakpointUp($size) {
-  @media (min-width: map-get($breakpointsUp, $size )) {
-    @content;
-  }
+    @media (min-width: map-get($breakpointsUp, $size)) {
+        @content;
+    }
 }
+
 @mixin breakpointDown($size) {
-  @media (max-width: map-get($breakpointsDown, $size )) {
-    @content;
-  }
+    @media (max-width: map-get($breakpointsDown, $size)) {
+        @content;
+    }
 }

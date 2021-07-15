@@ -1,7 +1,5 @@
 .servicios {
-  width: 90%;
-  margin: 0 auto;
-
+  margin: 1rem 2rem;
   &__title {
     color: $lightGray;
     font-size: 3rem;
@@ -10,10 +8,8 @@
     text-align: center;
   }
   &__imagen {
-    max-width: 40rem;
-    @include breakpointUp(large) {
-      width: 40rem;
-    }
+    width: 100%;
+    max-width: 50rem;
   }
   &__grid {
     display: grid;
@@ -26,13 +22,25 @@
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @include breakpointUp(large) {
+    @include breakpointUp(xlarge) {
       grid-template-columns: repeat(4, 1fr);
     }
   }
   &__text {
     text-align: center;
+    text-transform: uppercase;
+    font-weight: $regular;
     color: $lightGray;
     padding-top: 1rem;
+    &:hover {
+      transform: scale(1.05);
+      color: $lightOrange;
+      transition: all 200ms ease-in-out;
+    }
+  }
+
+  &__item:hover {
+    transform: scale(1.02);
+    transition: all 200ms ease-in-out;
   }
 }
