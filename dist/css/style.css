@@ -136,8 +136,7 @@ html {
 }
 
 body {
-  background: -webkit-gradient(linear, left top, right top, from(#131313), to(#222222));
-  background: linear-gradient(to right, #131313, #222222);
+  background-color: #131313;
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
@@ -521,72 +520,21 @@ button,
 }
 
 .servicios {
-  margin: 1rem 2rem;
-}
-
-.servicios__title {
-  color: #cccccc;
-  font-size: 3rem;
-  font-weight: 700;
-  margin: 2rem auto;
-  text-align: center;
-}
-
-.servicios__imagen {
-  width: 100%;
-  max-width: 50rem;
-}
-
-.servicios__grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  gap: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-}
-
-@media (min-width: 40em) {
-  .servicios__grid {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 87.5em) {
-  .servicios__grid {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.servicios__text {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #cccccc;
   padding-top: 1rem;
+  width: 100%;
+  height: 120rem;
 }
 
-.servicios__text:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  color: #eb4511;
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
-}
-
-.servicios__item:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+.servicios__image {
+  height: 30rem;
+  background-image: url("/img/imagen1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .nosotros {
+  background-color: #131313;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -644,8 +592,9 @@ button,
 }
 
 .nosotros__description {
-  width: 100%;
+  width: 90%;
   padding: 2rem;
+  line-height: 1.5;
   text-align: center;
   color: #cccccc;
   font-size: 1.6rem;
@@ -654,14 +603,12 @@ button,
 
 @media (min-width: 40em) {
   .nosotros__description {
-    line-height: 1.3;
+    line-height: 1.5;
     font-size: 1.6rem;
   }
 }
 
 .marcas {
-  background: -webkit-gradient(linear, left top, right top, from(#131313), to(#222222));
-  background: linear-gradient(to right, #131313, #222222);
   width: 100%;
 }
 
@@ -705,6 +652,13 @@ button,
   }
 }
 
+.marcas__images > img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
 @media (min-width: 40em) {
   .marcas__images {
     -ms-grid-columns: (1fr)[3];
@@ -722,6 +676,7 @@ button,
 .formularioWrapper {
   background-color: #131313;
   width: 100%;
+  padding-top: 1rem;
 }
 
 .containerGrid {
@@ -756,6 +711,14 @@ button,
   display: block;
   padding: 1rem 0;
   color: #cccccc;
+}
+
+.contacto a:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  color: #666666;
 }
 
 .contacto h2 {

@@ -1,6 +1,7 @@
 .formularioWrapper {
     background-color: $darkBlack;
     width: 100%;
+    padding-top: 1rem;
 }
 
 .containerGrid {
@@ -24,6 +25,11 @@
         display: block;
         padding: 1rem 0;
         color: $lightGray;
+        &:hover {
+            transform: scale(1.02);
+            transition: all 200ms ease-in-out;
+            color: $darkGray;
+        }
     }
     h2 {
         color: $lightGray;
