@@ -1,0 +1,67 @@
+.testimonios {
+    margin: 2rem auto;
+    border-top: 1px solid $lightBlack;
+    &__title {
+        padding: 2rem;
+        text-align: center;
+        font-size: 4rem;
+        color: $lightGray;
+        >span {
+            font-weight: $bold;
+        }
+    }
+    &__grid {
+        display: grid;
+        place-content: center;
+        @include breakpointUp(medium) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include breakpointUp(large) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    &__item {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        max-width: 60rem;
+        @include breakpointUp(large) {
+            max-width: 60rem;
+        }
+        justify-content: center;
+        >img {
+            width: 16rem;
+            height: 16rem;
+            border: 5px solid $darkerGray;
+            outline: 2px solid $darkOrange;
+            outline-offset: .2rem;
+            border-radius: 50%;
+        }
+    }
+    &__description {
+        padding: 0.5rem 0 2rem 2rem;
+    }
+    &__name {
+        color: $lightGray;
+        font-size: $font-M;
+        font-weight: $semiBold;
+        padding-bottom: .2rem;
+    }
+    &__place {
+        font-size: $font-S;
+        padding-bottom: .5rem;
+    }
+    &__quote {
+        position: relative;
+        font-size: $font-XL;
+        color: $lightGray;
+        font-family: $secondaryFont;
+        font-style: oblique;
+        >i {
+            font-style: italic;
+            padding: 1rem;
+            position: relative;
+            bottom: 1rem;
+        }
+    }
+}

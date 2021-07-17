@@ -1,35 +1,33 @@
 .carousel {
-  &-item {
-    max-height: 60rem;
-    overflow: hidden;
-  }
-  &-caption {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0) 5%,
-      rgba(255, 255, 255, 1) 50%,
-      rgba(255, 255, 255, 0) 95%
-    );
-    padding: 1rem;
-    & h4 {
-      font-size: $font-M;
-      color: $darkBlack;
+    &-item {
+        max-height: 60rem;
+        overflow: hidden;
     }
-
-    & p {
-      font-size: $font-S;
-      color: $darkBlack;
+    &-caption {
+        background: rgb(255, 255, 255);
+        background: linear-gradient( 90deg, rgba(255, 255, 255, 0) 5%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 95%);
+        padding: 1rem;
+        & h4 {
+            font-size: $font-XL;
+            font-weight: $semiBold;
+            color: $darkerGray;
+        }
+        & p {
+            font-size: $font-M;
+            font-weight: $regular;
+            color: $darkBlack;
+            padding: 1rem;
+        }
     }
-  }
-  &-indicators {
-    > button {
-      border-radius: 0;
-      @include gradientOrange(to bottom);
+    &-indicators {
+        >button {
+            border-radius: 0;
+            @include gradientOrange(to bottom);
+            padding: 1rem;
+        }
     }
-  }
-  &-control-next-icon,
-  &-control-prev-icon {
-    filter: invert(1);
-  }
+    &-control-next-icon,
+    &-control-prev-icon {
+        filter: invert(1);
+    }
 }

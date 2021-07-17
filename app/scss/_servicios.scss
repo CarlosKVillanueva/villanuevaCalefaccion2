@@ -1,12 +1,70 @@
-.servicios {
-    padding-top: 1rem;
-    width: 100%;
-    height: 120rem;
-    &__image {
-        height: 30rem;
-        background-image: url('/img/imagen1.jpg');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
+    .servicios {
+        padding: 1rem 0 0 0;
+        &__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            @include breakpointUp(medium) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        &__header {
+            display: block;
+            height: 6rem;
+            text-align: center;
+            font-size: 4rem;
+            font-weight: $regular;
+            color: $lightGray;
+            >span {
+                font-weight: $bold;
+            }
+        }
+        &__item {
+            position: relative;
+            width: 100%;
+            height: 30rem;
+        }
+        &__image {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 30rem;
+            object-fit: cover;
+            object-position: center center;
+        }
+        &__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #000000, $alpha: 0.9);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: all 300ms ease-in-out;
+            backdrop-filter: blur(1rem);
+            >* {
+                transform: translateY(2rem);
+                transition: transform 300ms ease-in-out;
+            }
+            &:hover {
+                opacity: 1;
+                >* {
+                    transform: translateY(0);
+                }
+            }
+        }
+        &__title {
+            color: $lightGray;
+            font-weight: $bold;
+            font-size: 2.8rem;
+            text-transform: uppercase;
+        }
+        &__description {
+            color: $lightGray;
+            font-weight: $regular;
+            font-size: $font-S;
+        }
     }
-}

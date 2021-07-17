@@ -9,7 +9,7 @@
         {
             "extensionName": ".min.css",
             "format": "compressed",
-            "savePath": "/dist/min/css"
+            "savePath": "/dist/css/min"
         }
     ],
     "liveSassCompile.settings.generateMap": true,

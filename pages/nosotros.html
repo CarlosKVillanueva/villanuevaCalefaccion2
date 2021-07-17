@@ -2,135 +2,200 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Villanueva Calefacción</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&display=swap"
-    rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/hover.css" media="all">
-    <script src="https://kit.fontawesome.com/f26eec53aa.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Somos una empresa familiar con mas de 25 años de experienca, brindamos asesoramiento comercial y técnico para calefaccionar sus proyectos" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keyword" content="Radiadores, Pisos Radiantes, Calderas Murales, Calefaccion, Servicio Tecnico" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="/dist/images/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/dist/css/min/style.min.css" />
+
+    <title>Nosotros - Villanueva Calefacción</title>
 </head>
 
 <body>
-
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 HEADER                                  -->
+    <!-- ----------------------------------------------------------------------- -->
     <header class="header">
+        <div class="overlay has-fade"></div>
 
-        <div class="containerNav">
-
-            <a class="hvr-float-shadow" href="../index.html">
-                <img class="logoIndex" src="../img/logoVillanuevaCalefaccion.png" alt="Logo Villanueva Calefacción">
+        <nav class="flex flex-jcsb flex-ai-c">
+            <a class="header__logo" href="/index.html">
+                <img src="/dist/images/logoVillanuevaCalefaccion.svg" alt="Logo Villanueva Calefacción" />
             </a>
 
+            <a id="btnHamburger" class="header__toggle hide-for-desktop" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
 
-            <nav class="navegacion">
-
-                <ul class="menuNavegacion">
-
-                    <li><a class="hvr-glow" href="../index.html"></i>Inicio</a></li>
-                    <li><a class="hvr-glow" href="servicios.html">Servicios<i class="fas fa-caret-down"></i></a>
-
-                        <ul class="submenuServicios">
-
-                            <li><a class="hvr-glow" href="radiadores.html">Radiadores</a></li>
-                            <li><a class="hvr-glow" href="pisoRadiante.html">Pisos Radiantes</a></li>
-                            <li><a class="hvr-glow" href="servicioTecnico.html">Servicio Tecnico</a></li>
-                            <li><a class="hvr-glow" href="instalacionCalderas.html">Instalacion de Calderas<i
-                                        class="fas fa-caret-right"></i></a>
-
-                                <ul class="submenuCalderas">
-
-                                    <li><a class="hvr-glow" href="calderaMural.html">Calderas Murales</a></li>
-                                    <li><a class="hvr-glow" href="calderaMuralCondensacion.html">Calderas Murales
-                                            de
-                                            Condensacion</a></li>
+            <div class="nav header__links hide-for-mobile">
+                <ul class="nav__desktop header__links">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li>
+                        <a href="servicios.html">Servicios</a>
+                        <ul class="nav__dropdownMenu">
+                            <li><a href="radiadores.html">Radiadores</a></li>
+                            <li><a href="pisoRadiante.html">Pisos Radiantes</a></li>
+                            <li>
+                                <a href="servicioTecnico.html">Servicio Tecnico</a>
+                            </li>
+                            <li>
+                                <a href="instalacionCalderas.html"> Instalación de Calderas </a>
+                                <ul class="nav__dropdownSubMenu">
+                                    <li><a href="calderaMural.html">Caldera Mural</a></li>
+                                    <li>
+                                        <a href="calderaMuralCondensacion.html"> Caldera Condensación </a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li><a class="hvr-glow" href="nosotros.html">Nosotros</a></li>
-                    <li><a class="hvr-glow" href="contacto.html">Contacto</a></li>
+                    <li><a href="testimonios.html">Testimonios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
-            </nav>
+            </div>
 
+            <button class="nav__cta button hide-for-mobile" type="button">Solicitar Presupuesto</button>
+        </nav>
 
+        <div class="nav__mobile has-fade">
+            <a href="index.html">Inicio</a>
+            <a href="testimonios.html">Testimonios</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <!-- <button class="nav__cta button" type="button">Solicitar Presupuesto</button> -->
         </div>
     </header>
 
     <main>
-        
-
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                CAROUSEL                                 -->
+        <!-- ----------------------------------------------------------------------- -->
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/dist/images/Carousel_1.webp" class="d-block w-100" alt="Galeria Carousel Pisos Radiantes" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>Pisos Radiantes</h4>
+                            <p>La sensación de confort que transmite el piso radiante es inigualable</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/dist/images/Carousel_2.webp" class="d-block w-100" alt="Galeria Carousel Radiadores" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>Radiadores</h4>
+                            <p>El sistema de radiadores es funcional y decorativo de tus ambientes.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/dist/images/Carousel_3.webp" class="d-block w-100" alt="Galeria Carousel Servicio Tecnico" />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>Calderas de Condensación</h4>
+                            <p>Ahorra hasta un 30% de Energía</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../img/Carousel_1.jpg" class="d-block w-100" alt="Pisos Radiantes">
-              </div>
-              <div class="carousel-item">
-                <img src="../img/Carousel_2.jpg" class="d-block w-100" alt="Radiadores">
-              </div>
-              <div class="carousel-item">
-                <img src="../img/Carousel_3.jpg" class="d-block w-100" alt="Radiadores">
-              </div>
-              <div class="carousel-item">
-                <img src="../img/Carousel_4.jpg" class="d-block w-100" alt="Servicio Tecnico">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-        <section class="nosotros">
-            <h2 class="nosotrosTitulo">Sobre <span>Nosotros</span></h2>
-            <p class="nosotrosParrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt mollitia, officiis quod dicta totam
-                consequatur magni eos aperiam maiores similique voluptatibus, corporis, nesciunt id in amet nam at cum
-                laboriosam. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Explicabo velit ut, magnam porro facere aut saepe vero. Sint quo
-                voluptatem velit consequatur maxime temporibus officia optio, est non impedit voluptas.</p>
-
-            <img class="imagenNosotros" width="300px" src="../img/imagenSobreNosotros.jpg" alt="Imagen Planos">
         </section>
 
-        
-    </main>
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                NOSOTROS                                 -->
+        <!-- ----------------------------------------------------------------------- -->
+        <section class="nosotros">
+            <img class="nosotros__image" src="/img/nosotrosImage.svg" alt="" />
 
-    <footer class="footer">
-        <div class="containerFooter">
-            <div class="parrafoFooter">
-                <p>Todos los derechos reservados<i class="far fa-copyright"></i> - Villanueva
-                    Calefaccion</p>
+            <div class="nosotros__content">
+                <h2 class="nosotros__title">Sobre <span>Nosotros</span></h2>
+                <div class="nosotros__description">
+                    <p>Somos una empresa familiar que brinda soluciones en sistemas de calefacción. Contamos con mas de 25 años de experiencia en el rubro. Ofrecemos asesoramiento tecnico y comercial, adaptandonos a las necesidades de cada proyecto.</p>
+                    <p>Para cumplir con este objetivo contamos con el respaldo de empresas líderes a nivel nacional e internacional en equipos e insumos de calefacción, quienes confían en nosotros como socios estratégicos y nos permiten brindar productos
+                        de alta calidad a nuestros clientes.</p>
+                    <p>Desde el proyecto inicial, hasta el servicio post-venta, usted contará con toda nuestra experiencia y seriedad.</p>
+                </div>
             </div>
-            <div class="socialLinks">
-                <a href="https://www.facebook.com/">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com/">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.youtube.com/">
-                    <i class="fab fa-youtube"></i>
-                </a>
+        </section>
+
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                 MARCAS                                  -->
+        <!-- ----------------------------------------------------------------------- -->
+
+        <section class="marcas">
+            <h2 class="marcas__title">Marcas en las que <span>Confiamos</span></h2>
+
+            <div class="marcas__images">
+                <img src="/dist/images/marcas/ariston.webp" alt="Ariston" />
+                <img src="/dist/images/marcas/baxi.webp" alt="Baxi" />
+                <img src="/dist/images/marcas/caldaia.webp" alt="Caldaia" />
+                <img src="/dist/images/marcas/euterma.webp" alt="Euterma" />
+                <img src="/dist/images/marcas/ferroli.webp" alt="Ferroli" />
+                <img src="/dist/images/marcas/giacomini.webp" alt="Giacomini" />
+                <img src="/dist/images/marcas/immergas.webp" alt="Immergas" />
+                <img src="/dist/images/marcas/latynclima.webp" alt="Latyn Clima" />
+                <img src="/dist/images/marcas/offit.webp" alt="OfittFV" />
+                <img src="/dist/images/marcas/peisa.webp" alt="Peisa" />
+                <img src="/dist/images/marcas/santilli.webp" alt="Santilli" />
+                <img src="/dist/images/marcas/rehau.webp" alt="Rehau" />
             </div>
-        </div>
-    </footer>
+        </section>
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                 FOOTER                                  -->
+        <!-- ----------------------------------------------------------------------- -->
+        <footer class="footerWrapper">
+            <div class="footer">
+                <div>
+                    <p>Todos los derechos reservados<i class="far fa-copyright"></i> - Villanueva Calefaccion</p>
+                </div>
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.twitter.com/">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                 SCRIPTS                                 -->
+        <!-- ----------------------------------------------------------------------- -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="/app/js/scripts.js"></script>
 </body>
 
 </html>

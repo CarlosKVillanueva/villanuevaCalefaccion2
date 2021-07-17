@@ -139,6 +139,7 @@
     }
     &__dropdownMenu {
         position: absolute;
+        z-index: 1;
         padding: 0;
         background-color: $darkBlack;
         font-size: $font-M;

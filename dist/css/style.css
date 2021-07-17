@@ -139,7 +139,7 @@ body {
   background-color: #131313;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.3;
   font-size: 1.8rem;
 }
@@ -207,8 +207,8 @@ button,
   border-radius: 5rem;
   border: none;
   cursor: pointer;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
+  color: white;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 
@@ -399,6 +399,7 @@ button,
 
 .nav__dropdownMenu {
   position: absolute;
+  z-index: 1;
   padding: 0;
   background-color: #131313;
   font-size: 1.6rem;
@@ -479,7 +480,7 @@ button,
   text-transform: uppercase;
   font-size: 1.8rem;
   font-weight: 400;
-  color: #fff;
+  color: white;
 }
 
 .nav__mobile a:hover {
@@ -499,19 +500,23 @@ button,
 }
 
 .carousel-caption h4 {
-  font-size: 1.6rem;
-  color: #131313;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #333333;
 }
 
 .carousel-caption p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
   color: #131313;
+  padding: 1rem;
 }
 
 .carousel-indicators > button {
   border-radius: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#b02e0c), to(#eb4511));
   background: linear-gradient(to bottom, #b02e0c, #eb4511);
+  padding: 1rem;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
@@ -520,17 +525,244 @@ button,
 }
 
 .servicios {
-  padding-top: 1rem;
+  padding: 1rem 0 0 0;
+}
+
+.servicios__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media (min-width: 40em) {
+  .servicios__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.servicios__header {
+  display: block;
+  height: 6rem;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 400;
+  color: #cccccc;
+}
+
+.servicios__header > span {
+  font-weight: 700;
+}
+
+.servicios__item {
+  position: relative;
   width: 100%;
-  height: 120rem;
+  height: 30rem;
 }
 
 .servicios__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.servicios__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+}
+
+.servicios__overlay > * {
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+.servicios__overlay:hover {
+  opacity: 1;
+}
+
+.servicios__overlay:hover > * {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.servicios__title {
+  color: #cccccc;
+  font-weight: 700;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+
+.servicios__description {
+  color: #cccccc;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.radiadores,
+.pisos,
+.servicioTecnico,
+.calderas {
+  margin: 1rem auto 3rem auto;
+}
+
+.radiadores__title,
+.pisos__title,
+.servicioTecnico__title,
+.calderas__title {
+  padding: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  color: #cccccc;
+}
+
+.radiadores__title > span,
+.pisos__title > span,
+.servicioTecnico__title > span,
+.calderas__title > span {
+  font-weight: 700;
+}
+
+.radiadores__ventajas,
+.pisos__ventajas,
+.servicioTecnico__ventajas,
+.calderas__ventajas {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  color: #cccccc;
+  line-height: 1.3;
+}
+
+.radiadores__ventajas span,
+.pisos__ventajas span,
+.servicioTecnico__ventajas span,
+.calderas__ventajas span {
+  display: block;
+  color: #666666;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.radiadores__ventajas li,
+.pisos__ventajas li,
+.servicioTecnico__ventajas li,
+.calderas__ventajas li {
+  padding-bottom: 2rem;
+}
+
+.radiadores__ventajas p,
+.pisos__ventajas p,
+.servicioTecnico__ventajas p,
+.calderas__ventajas p {
+  padding: 1rem 0 0 3rem;
+}
+
+.radiadores__ventajas--paragraph,
+.pisos__ventajas--paragraph,
+.servicioTecnico__ventajas--paragraph,
+.calderas__ventajas--paragraph {
+  line-height: 2;
+  font-size: 2rem;
+  color: #cccccc;
+  text-align: justify;
+}
+
+.calderas {
+  padding-bottom: 1rem;
+}
+
+.calderas__title {
+  padding: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  color: #cccccc;
+}
+
+.calderas__title > span {
+  font-weight: 700;
+}
+
+.calderas__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: .2rem;
+}
+
+@media (min-width: 40em) {
+  .calderas__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.calderas__content {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.calderas__image {
+  display: block;
+  width: 100%;
   height: 30rem;
-  background-image: url("/img/imagen1.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  min-height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center bottom;
+     object-position: center bottom;
+}
+
+.calderas__title {
+  font-size: 2.6rem;
+  font-weight: 600;
+  padding-bottom: .5rem;
+}
+
+.calderas__title:hover {
+  color: #b02e0c;
+}
+
+.calderas__description {
+  color: #cccccc;
+}
+
+.calderas__description:hover {
+  color: #eb4511;
 }
 
 .nosotros {
@@ -583,8 +815,9 @@ button,
 .nosotros__title {
   text-align: center;
   color: #cccccc;
-  font-size: 3rem;
-  margin-top: 1rem;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-top: 2rem;
 }
 
 .nosotros__title > span {
@@ -608,7 +841,102 @@ button,
   }
 }
 
+.testimonios {
+  margin: 2rem auto;
+  border-top: 1px solid #222222;
+}
+
+.testimonios__title {
+  padding: 2rem;
+  text-align: center;
+  font-size: 4rem;
+  color: #cccccc;
+}
+
+.testimonios__title > span {
+  font-weight: 700;
+}
+
+.testimonios__grid {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+@media (min-width: 40em) {
+  .testimonios__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64em) {
+  .testimonios__grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.testimonios__item {
+  width: 95%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 60rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 64em) {
+  .testimonios__item {
+    max-width: 60rem;
+  }
+}
+
+.testimonios__item > img {
+  width: 16rem;
+  height: 16rem;
+  border: 5px solid #333333;
+  outline: 2px solid #b02e0c;
+  outline-offset: .2rem;
+  border-radius: 50%;
+}
+
+.testimonios__description {
+  padding: 0.5rem 0 2rem 2rem;
+}
+
+.testimonios__name {
+  color: #cccccc;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-bottom: .2rem;
+}
+
+.testimonios__place {
+  font-size: 1.4rem;
+  padding-bottom: .5rem;
+}
+
+.testimonios__quote {
+  position: relative;
+  font-size: 2.2rem;
+  color: #cccccc;
+  font-family: "Montserrat", sans-serif;
+  font-style: oblique;
+}
+
+.testimonios__quote > i {
+  font-style: italic;
+  padding: 1rem;
+  position: relative;
+  bottom: 1rem;
+}
+
 .marcas {
+  border-top: 1px solid #222222;
   width: 100%;
 }
 
@@ -626,7 +954,7 @@ button,
 
 .marcas__images {
   padding: 1rem 0;
-  background-color: #fff;
+  background-color: white;
   display: -ms-grid;
   display: grid;
   gap: 1rem;
@@ -790,6 +1118,7 @@ button,
   background-color: #131313;
   border-top: 1px solid #222222;
   padding: 1rem 0;
+  margin: 1rem 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
