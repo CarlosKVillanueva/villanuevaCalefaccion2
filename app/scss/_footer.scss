@@ -1,6 +1,5 @@
 .footer {
     background-color: $darkBlack;
-    border-top: 1px solid $lightBlack;
     padding: 1rem 0;
     margin: 1rem 0 0 0;
     display: flex;
@@ -17,8 +16,32 @@
         &__social {
             text-align: center;
             i {
+                font-size: M;
                 padding: 1rem;
             }
+        }
+    }
+    &__CKV {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0 2rem 0;
+        img {
+            height: 2.5rem;
+        }
+        span {
+            font-weight: $semiBold;
+        }
+        p {
+            padding-right: 1rem;
+            font-size: $font-M;
+        }
+        i {
+            font-size: $font-L;
+            color: $lightBlack;
+            padding: 0 0.5rem;
         }
     }
 }

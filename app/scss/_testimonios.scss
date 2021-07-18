@@ -1,6 +1,5 @@
 .testimonios {
     margin: 2rem auto;
-    border-top: 1px solid $lightBlack;
     &__title {
         padding: 2rem;
         text-align: center;
@@ -16,13 +15,14 @@
         @include breakpointUp(medium) {
             grid-template-columns: repeat(2, 1fr);
         }
-        @include breakpointUp(large) {
+        @include breakpointUp(xlarge) {
             grid-template-columns: repeat(4, 1fr);
         }
     }
     &__item {
         width: 95%;
         margin: 0 auto;
+        padding: 1rem;
         display: flex;
         max-width: 60rem;
         @include breakpointUp(large) {
@@ -53,12 +53,13 @@
     }
     &__quote {
         position: relative;
-        font-size: $font-XL;
+        font-size: $font-L;
         color: $lightGray;
         font-family: $secondaryFont;
         font-style: oblique;
         >i {
             font-style: italic;
+            font-size: $font-M;
             padding: 1rem;
             position: relative;
             bottom: 1rem;
