@@ -898,9 +898,7 @@ button,
 .testimonios__item > img {
   width: 16rem;
   height: 16rem;
-  border: 5px solid #333333;
-  outline: 2px solid #b02e0c;
-  outline-offset: .2rem;
+  border: 5px solid #b02e0c;
   border-radius: 50%;
 }
 
@@ -912,12 +910,12 @@ button,
   color: #cccccc;
   font-size: 1.6rem;
   font-weight: 600;
-  padding-bottom: .2rem;
+  padding-bottom: 0.2rem;
 }
 
 .testimonios__place {
   font-size: 1.4rem;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 .testimonios__quote {
