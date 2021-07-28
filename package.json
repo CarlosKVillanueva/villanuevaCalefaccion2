@@ -4,7 +4,7 @@
   "description": "Pagina Web emprendimiento familiar",
   "main": "gulpfile.js",
   "scripts": {
-    "purgecss": "purgecss --css dist/css/*.css --content *.html --output dist/css/min/"
+    "purgecss": "purgecss --css dist/css/*.css --content *.html --output dist/css"
   },
   "repository": {
     "type": "git",
