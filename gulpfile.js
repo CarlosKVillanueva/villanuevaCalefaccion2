@@ -69,7 +69,7 @@ function webpImage() {
 /*                                 WATCH TASK                                 */
 /* -------------------------------------------------------------------------- */
 function watchTask() {
-	watch('*.html', browserSyncReload);
+	watch('**/*.html', browserSyncReload);
 	watch(
 		['app/scss/**/*.scss', 'app/**/*.js', 'img/**/*.{jpg,png}'],
 		series(scssTask, jsTask,webpImage, browserSyncReload)
