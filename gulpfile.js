@@ -12,8 +12,6 @@ const browsersync = require('browser-sync').create();
 const imagewebp = require('gulp-webp');
 const rename = require('gulp-rename');
 
-// Use dart-sass for @use
-//sass.compiler = require('dart-sass');
 
 /* -------------------------------------------------------------------------- */
 /*                                  SASS TASK                                 */
@@ -103,4 +101,5 @@ function copyBJS() {
 /* -------------------------------------------------------------------------- */
 /*                                  GULP TASK                                 */
 /* -------------------------------------------------------------------------- */
-exports.default = series(scssTask, jsTask, browserSyncServe, webpImage, copyIMG, copyB, copyBJS, watchTask);
+exports.preprocess = series(webpImage, copyIMG, copyB, copyBJS);
+exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
