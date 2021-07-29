@@ -41,13 +41,14 @@
   }
   &__name {
     color: $lightGray;
-    font-size: $font-M;
+    font-size: $font-XL;
     font-weight: $semiBold;
     padding-bottom: 0.2rem;
   }
   &__place {
     font-size: $font-S;
-    color: $darkGray;
+    font-weight: $light;
+    color: $white;
     padding-bottom: 0.5rem;
   }
   &__quote {
